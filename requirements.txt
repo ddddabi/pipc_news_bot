@@ -1,0 +1,9 @@
+# requirements.txt
+
+requests
+beautifulsoup4
+PyMuPDF             # fitz (PDF 텍스트 추출)
+google-generativeai # Gemini API
+gspread             # Google Sheets API
+oauth2client        # 서비스 계정 인증
+PyYAML              # config.yaml 파싱
