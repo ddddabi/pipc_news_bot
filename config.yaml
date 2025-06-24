@@ -1,0 +1,34 @@
+paths:
+  pdf_dir: "data/pdfs"
+  summary_dir: "data/summaries"
+  log_dir: "data/logs"
+
+files:
+  log_file: "data/logs/automation.log"
+  seen_ids_file: "data/logs/seen_news_ids.json"
+  sent_articles_file: "data/logs/sent_articles.json"
+
+
+scripts:
+  crawl: "py_code/pipc_crawler.py"
+  summarize: "py_code/gemini_summarizer.py"
+  upload: "py_code/notion_uploader.py"
+
+
+monitor:
+  list_url: "https://www.pipc.go.kr/np/cop/bbs/selectBoardList.do"
+  detail_prefix: "https://www.pipc.go.kr"
+  bbs_id: "BS074"
+  m_code: "C020010000"
+
+webhook:
+  url: "WEBHOOK URL"
+
+gemini:
+  api_key: "API KEY"
+  model: "models/gemini-1.5-flash"
+
+google_sheets:
+  spreadsheet_id: "SHEET ID"
+  worksheet_name: "SHEET NAME"
+  credentials_path: "credentials.json"
