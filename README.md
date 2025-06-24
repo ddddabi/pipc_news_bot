@@ -87,3 +87,38 @@
 - 동향 누락 방지
 - 반복 업무 자동화로 인한 생산성 향상
 
+---
+
+## 기타 설정해야 할 것
+### config.yaml
+```
+webhook:
+  url: "WEBHOOK URL"
+
+gemini:
+  api_key: "API KEY"
+  model: "models/gemini-1.5-flash"
+
+google_sheets:
+  spreadsheet_id: "SHEET ID"
+  worksheet_name: "SHEET NAME"
+  credentials_path: "credentials.json"
+```
+
+### credentials.json
+```
+{
+  "type": "service_account",
+  "project_id": "",
+  "private_key_id": "",
+  "private_key": "",
+  "client_email": "",
+  "client_id": "",
+  "auth_uri": "",
+  "token_uri": "",
+  "auth_provider_x509_cert_url": "",
+  "client_x509_cert_url": "",
+  "universe_domain": "googleapis.com"
+}
+
+```
